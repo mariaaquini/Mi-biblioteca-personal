@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Libros que Inspiran 💖</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+    body {
+      background: linear-gradient(135deg, #ffe4e6, #f8d7da);
+      font-family: 'Quicksand', sans-serif;
+      color: #6b2d5c;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      min-height: 100vh;
+      align-items: flex-start;
+    }
+
+    .container {
+      background: #fff0f6;
+      border-radius: 20px;
+      box-shadow: 0 8px 24px rgba(107, 45, 92, 0.2);
+      width: 100%;
+      max-width: 650px;
+      padding: 35px 45px;
+    }
+
+    h1 {
+      text-align: center;
+      font-weight: 700;
+      font-size: 2.8rem;
+      margin-bottom: 1.5rem;
+      color: #b3476f;
+      letter-spacing: 3px;
+      text-shadow: 1px 1px 3px #f6bddf;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0 18px;
+    }
+
+    thead th {
+      font-weight: 700;
+      font-size: 1.2rem;
+      padding-bottom: 12px;
+      text-align: left;
+      border-bottom: 3px solid #f6bddf;
+      color: #a1395f;
+    }
+
+    tbody tr {
+      background: #ffe1eb;
+      border-radius: 16px;
+      box-shadow: 0 4px 15px rgba(179, 71, 111, 0.1);
+      transition: transform 0.25s ease;
+      cursor: default;
+    }
+
+    tbody tr:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 22px rgba(179, 71, 111, 0.25);
+    }
+
+    td {
+      padding: 14px 18px;
+      font-weight: 600;
+      font-size: 1.05rem;
+      color: #6b2d5c;
+    }
+
+    /* Calificación con estrellas rosadas */
+    .stars {
+      color: #db4c7e;
+      font-size: 1.4rem;
+      letter-spacing: 4px;
+    }
+
+    /* Responsive */
+    @media (max-width: 480px) {
+      .container {
+        padding: 25px 30px;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+      td, thead th {
+        font-size: 0.9rem;
+        padding: 10px 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Libros que Inspiran 💖</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Autor</th>
+          <th>Género</th>
+          <th>Calificación</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>La educación como práctica de la libertad</td>
+          <td>Paulo Freire</td>
+          <td>Educación / Pedagogía</td>
+          <td class="stars">★★★★★</td>
+        </tr>
+        <tr>
+          <td>Psicología educativa</td>
+          <td>David Ausubel</td>
+          <td>Psicología</td>
+          <td class="stars">★★★★☆</td>
+        </tr>
+        <tr>
+          <td>Historia de la educación</td>
+          <td>José Carlos Mariátegui</td>
+          <td>Historia</td>
+          <td class="stars">★★★☆☆</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
